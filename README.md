@@ -16,10 +16,10 @@ Installation
 --------------
 Either:
 * Install Sitecore package. See [Releases](https://github.com/digitalParkour/Community.Foundation.RemoteCacheKick/releases).
-	
+	> To install on CD servers, copy files (config and dlls) to CD servers.
 Or:
 1. Include this project in your Helix style solution
 2. Update NuGet references to match target sitecore version
 3. Sync unicorn data or install sitecore package
-    > Expects Unicorn 4+ in your solution
-    > Disable Foundation.RemoteCacheKick.Serialization.config if not using Unicorn
+    > Expects Unicorn 4+ in your solution.
+    > If not using Unicorn, disable Foundation.RemoteCacheKick.Serialization.config
