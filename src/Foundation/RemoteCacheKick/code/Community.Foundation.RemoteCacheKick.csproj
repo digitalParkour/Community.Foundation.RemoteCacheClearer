@@ -72,7 +72,6 @@
     <Content Include="App_Config\Include\Foundation\Foundation.RemoteCacheKick.config" />
     <Content Include="App_Config\Include\Foundation\Foundation.RemoteCacheKick.Serialization.config" />
     <None Include="packages.config" />
-    <Content Include="Readme.md" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

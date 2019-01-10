@@ -1,0 +1,94 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Community-Foundation-RemoteCacheKick</PackageName>
+      <Author>james.gregory@americaneagle.com</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>Community.Foundation.RemoteCacheKick 1.0
+
+To install on CD servers, just copy files (below) to servers.
+
+No extra steps required. Just install and enjoy. 
+Tool will be available under the Publish Ribbon
+Access to button can be controlled by normal Sitecore read rights to core database button item.
+
+See config file to toggle behavior. By default the button clears both current instance Sitecore cache and all scaled instances (that have files installed). 
+
+===============================================
+This package installs the following files:
+===============================================
+\App_Config\Include\Foundation\Foundation.RemoteCacheKick.config
+\bin\Community.Foundation.RemoteCacheKick.dll
+\bin\Community.Foundation.RemoteCacheKick.pdb
+
+===============================================
+This package installs the following data items (for button in CM):
+===============================================
+core:/sitecore/content/Applications/Content Editor/Ribbons/Strips/Publish/Remote Cache Clearer
+core:/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Remote Cache Clearer/Clear Remote Cache</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Foundation/Foundation.RemoteCacheKick.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Config</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Community.Foundation.RemoteCacheKick.dll</x-item>
+        <x-item>/bin/Community.Foundation.RemoteCacheKick.pdb</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>bin</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Remote Cache Clearer/{3AAFDB86-5890-49D6-BB91-8461895E5BF0}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Remote Cache Clearer/Clear Remote Cache/{FCF004F3-D040-4321-AD6C-96F182710608}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Strips/Publish/Remote Cache Clearer/{7FA2D1D4-84AF-4FDA-8AEE-6EB31CF73A34}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>button</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
