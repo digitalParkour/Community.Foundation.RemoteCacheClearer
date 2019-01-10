@@ -16,7 +16,8 @@ Installation
 --------------
 Either:
 * Install Sitecore package. See [Releases](https://github.com/digitalParkour/Community.Foundation.RemoteCacheKick/releases).
-	> To install on CD servers, copy files (config and dlls) to CD servers.
+	> For scaled setup, also copy files (config and dlls from package) to CD servers.
+
 Or:
 1. Include this project in your Helix style solution
 2. Update NuGet references to match target sitecore version
