@@ -12,10 +12,12 @@ Implementation
 A custom remote event is used to broadcast the button click.
 An event handler is used to respond to the remote event and clear server cache.
 
+Special thanks to [Kasaku on sitecore.stackexchange](https://sitecore.stackexchange.com/questions/2271/clearing-cd-cache-in-code-from-the-cm) for outlining the approach.
+
 Installation
 --------------
 Either:
-* Install Sitecore package. See [Releases](https://github.com/digitalParkour/Community.Foundation.RemoteCacheKick/releases).
+* Install Sitecore package. [See Releases](https://github.com/digitalParkour/Community.Foundation.RemoteCacheKick/releases).
 	> For scaled setup, also copy files (config and dlls from package) to CD servers.
 
 Or:
