@@ -13,7 +13,9 @@ namespace Community.Foundation.RemoteCacheKick.Commands
             Event.RaiseEvent("cache:clear");
 
             // Add some data to the Event Queue, which will be consumed by other instances and then raised as events on those instances.
-            Sitecore.Eventing.EventManager.QueueEvent<RemoteCacheClearEvent>(new RemoteCacheClearEvent());
+            var database = Sitecore.Configuration.Factory.GetDatabase("web");
+            var eventQueue = database.RemoteEvents.EventQueue;
+            eventQueue.QueueEvent(new RemoteCacheClearEvent());
 
             Log.Info("RemoteCacheClearHandler - triggered cache:clear and cache:clear:remote", this);
             Sitecore.Context.ClientPage.ClientResponse.Alert("Requested Remote Cache Clear");
