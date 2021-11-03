@@ -2,8 +2,8 @@
   <Metadata>
     <metadata>
       <PackageName>Community-Foundation-RemoteCacheKick</PackageName>
-      <Author>james.gregory@americaneagle.com</Author>
-      <Version>1.0</Version>
+      <Author>James Gregory &amp; Robbert Hock</Author>
+      <Version>9.3</Version>
       <Revision />
       <License />
       <Comment />
@@ -44,7 +44,16 @@ core:/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Remote Cache C
       <Converter>
         <FileToEntryConverter>
           <Root>/</Root>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </FileToEntryConverter>
       </Converter>
       <Include />
@@ -59,7 +68,16 @@ core:/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Remote Cache C
       <Converter>
         <FileToEntryConverter>
           <Root>/</Root>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </FileToEntryConverter>
       </Converter>
       <Include />
@@ -75,7 +93,16 @@ core:/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Remote Cache C
       <SkipVersions>False</SkipVersions>
       <Converter>
         <ItemToEntryConverter>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </ItemToEntryConverter>
       </Converter>
       <Include />
