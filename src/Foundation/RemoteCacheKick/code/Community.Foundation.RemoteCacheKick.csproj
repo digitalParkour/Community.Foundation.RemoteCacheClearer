@@ -49,7 +49,7 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Kernel, Version=16.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Kernel.10.1.1\lib\net48\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.10.1.2\lib\net48\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="sysglobl" />
     <Reference Include="System.Data.DataSetExtensions" />
